@@ -52,3 +52,7 @@ services:
         depends_on:
           - zookeeper
           - accumulo-master
+    apache-nifi:
+        image: nrydevops/geonifi
+        ports:
+          - 8080:8080
